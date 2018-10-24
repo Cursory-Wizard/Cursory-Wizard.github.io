@@ -1,0 +1,88 @@
+body {
+    background-color: cornflowerblue;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+table {
+    margin: auto;
+    width: 50%;
+}
+
+p {
+    margin: auto;
+    width: 50%;
+}
+
+input#playAgain {
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgb(179, 0, 179);
+}
+
+#winner {
+    margin: auto;
+    width: 50%;
+}
+input[type = "radio"]{
+    margin-right: 10px;
+}
+
+input#play {
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: rgb(179, 0, 179);
+    width: 50px;
+}
+
+input#quit {
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: rgb(179, 0, 179);
+    width: 50px;
+}
+
+input.complete {
+    border-radius: 5px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 5px solid rgb(204, 0, 204);
+}
+
+input.unflipped {
+    display: none;
+    background-image: url('cover.png');
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input.flipped {
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#playAgain {
+    display: none;
+}
+

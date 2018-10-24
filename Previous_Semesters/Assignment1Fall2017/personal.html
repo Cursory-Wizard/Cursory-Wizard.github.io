@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>About Michael Phelan</title>
+	<style>
+	  body {
+		background-color: #942126;
+	  }
+	  
+	  p {
+		color: black; margin-top: .2em; margin-bottom: .2em; font-size: 16; font-weight: bold; border-style: ridge; border-color: gold; 
+	  }	
+	  a {
+		padding-left: 20px; color: gold;
+	  }
+	  h3, ul, ol, li {
+		color: gold;
+	  }
+	  h3 {
+		margin-bottom: 0;
+	  }
+	  ul, ol {
+		margin-top: 0;	
+		font-family: arial;		
+	  }
+	</style>
+  </head>
+  <body>
+	<img alt="My daughter and I." src="images/girlandi.jpg">
+	<p>Hello! My name is Michael. I'm a stay-at-home father and I'm majoring in application and web programming.</p>
+	<p>Hopefully this page helps you learn a little more about me.</p>
+	<h2><a href="http://www.xkcd.com" target="_blank">My favorite web cartoon!</a></h2>
+	<h3>Foods I love to cook and bake:</h3>
+	<ul>
+		<li>Goat curry</li>
+		<li>French bread</li>
+		<li>Cornish pasties</li>
+	</ul>
+	<h3>Favorite authors in order:</h3>
+	<ol>
+		<li>Terry Pratchett</li>
+		<li>Steven Erikson</li>
+		<li>Isaac Asimov</li>
+	</ol>
+	<p id="dateoutput"></p>
+	<script>
+	var d = new Date();
+	document.getElementById("dateoutput").innerHTML = d;
+	</script>
+  </body>
+ </html>

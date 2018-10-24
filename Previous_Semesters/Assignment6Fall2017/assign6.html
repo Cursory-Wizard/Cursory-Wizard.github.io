@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test Scores</title>
+    <link href="css/default.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div>
+        <h1 id="title">Test Scores</h1>
+        <br />
+        <form id="formOne">
+            <label for="scoreOne">Test Score 1:</label>
+            <input type="text" id="scoreOne"/>
+            <span  class = "letterGrade" id="firstGrade">-</span>
+            <label for="testOneDate">Date of Test 1</label>
+            <input type="text" id="testOneDate" />
+            <span class="letterGrade" id="oneDate">-</span>
+            <br />
+            <p id="validOne"></p>
+            <label for="scoreTwo">Test Score 2:</label>
+            <input type="text" id="scoreTwo" />
+            <span class = "letterGrade" id="secondGrade">-</span>
+            <label for="testTwoDate">Date of Test 2</label>
+            <input type="text" id="testTwoDate" />
+            <span class="letterGrade" id="twoDate">-</span><br />
+            <p id="validTwo"></p>
+            <label for="scoreThree">Test Score 3:</label>
+            <input type="text" id="scoreThree" />
+            <span class = "letterGrade" id="thirdGrade">-</span>
+            <label for="testThreeDate">Date of Test 3</label>
+            <input type="text" id="testThreeDate" />
+            <span class="letterGrade" id="threeDate">-</span><br />
+            <p id="validThree"></p>            
+        </form>
+    </div>
+    <br />
+    <div class="buttonPlace">
+        <button onclick="calcForm()">Calculate</button>
+    </div>
+    <br />
+    <div class="buttonPlace">
+        <button onclick="resetForm()">Reset</button>
+    </div>
+    <br />
+    <div id="result">
+        <h4 id="sumResult">Score sum</h4>
+        <br />
+        <h4 id="averageResult">Average score</h4>
+    </div>
+    <div id="gradeResult">
+        <h4>Final grade:</h4>
+        <h3 id="classGrade">-</h3>
+    </div>
+    <div id="currentDate">
+        <h4>Today's Date:</h4>
+        <h3 id="dateVolume">-</h3>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 460px;
+    border: 3px solid blue;
+    padding: 0 2em 1em;
+}
+h1 {
+    color: blue;
+    margin-bottom: .25em;
+}
+label {
+    width: 4em;
+    text-align: right;
+    padding-bottom: .5em;
+}
+input {
+    width: 4em;
+    margin: 0 1em .5em .5em;
+}
+fieldset {
+    margin-bottom: 1em;
+}
+#message {
+    font-weight: bold;
+    color: red;
+}
+
+#quit {
+    display: none;
+}

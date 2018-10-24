@@ -1,0 +1,102 @@
+﻿body {
+    background-image: url("../images/manis.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#header {
+    
+    padding-left: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+a:link {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+a:hover{
+    color: darkblue;
+}
+
+.assigned {
+    background-color: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin: 5px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.assigned:hover {
+    background-color: lightskyblue;
+    transition: background-color, 1s;
+    
+}
+
+#popup {
+    position: relative;
+    display: none;
+}
+
+.assigned:hover #popup {
+    display: inline-block;
+    animation-name: tools;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tools {
+    0% {color: purple;}
+    50% {color: cornflowerblue;}
+    100% {color: purple;}
+
+}
+@keyframes fader {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#wrapper {
+    width: auto;
+    margin: 0 auto;
+}
+#leftcolumn, #rightcolumn {
+   
+    min-height: 450px;
+    color: white;
+    
+}
+#leftcolumn {
+    float: left;
+    width: 250px;
+    
+}
+#rightcolumn {
+    float: right;
+    text-align: right;
+    width: 750px;
+    
+}
+#fade {
+    float: right;
+    margin-top: 300px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+    max-width: 300px;
+    font-size: 24px;
+    font-style: italic;
+    animation-name: fader;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+#datediv{
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+}

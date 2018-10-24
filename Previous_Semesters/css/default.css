@@ -1,0 +1,172 @@
+body {
+    background-image: url("../images/manis.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    padding-left: 10px;
+    font-style: italic;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+.class_header {
+    background-color: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 5px;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+    .assigned:hover {
+        background-color: lightskyblue;
+        transition: background-color, 1s;
+    }
+
+#popup {
+    text-align: right;
+    display: none;
+}
+
+.class_header:hover #popup {
+    display: inline-block;
+    animation-name: tools;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tools {
+    0% {
+        color: purple;
+    }
+
+    50% {
+        color: cornflowerblue;
+    }
+
+    100% {
+        color: purple;
+    }
+}
+
+@keyframes fader {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#wrapper {
+    width: auto;
+    margin: 0 auto;
+}
+
+#leftcolumn, #rightcolumn {
+    min-height: 450px;
+    color: white;
+}
+
+#leftcolumn {
+    float: left;
+    width: 1200px;
+}
+
+#rightcolumn {
+    float: right;
+    text-align: right;
+    width: 750px;
+}
+/*
+#fade {
+    float: right;
+    margin-top: 300px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+    max-width: 300px;
+    font-size: 24px;
+    font-style: italic;
+    animation-name: fader;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+#datediv {
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    color: white;
+}*/
+
+table {
+    width: 40%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    min-width: 160px;
+    border: none;
+    border-radius: 25px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: cornflowerblue;
+    min-width: 160px;
+    border-radius: 15px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: darkblue;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: lightskyblue;
+  border-radius: 15px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: darkblue;}

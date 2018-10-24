@@ -1,0 +1,57 @@
+﻿body {
+  background-color: rebeccapurple;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#title {
+    text-align: center;
+    background-color: gray;
+    box-shadow: 0px 10px 5px dimgray;
+    color: darkgoldenrod;
+}
+div {
+    width: 300px;
+    margin: auto;
+}
+form {
+    background-color: dimgray;
+    padding: 10px;
+    border: 6px ridge darkgoldenrod;
+    text-align: center;
+}
+input {
+    width: 60px;
+   }
+.letterGrade {
+    font-weight: bold;
+    color: darkgoldenrod;
+    text-shadow: -1px -1px 0 rebeccapurple, 1px -1px 0 rebeccapurple, -1px 1px 0 rebeccapurple, 1px 1px 0 rebeccapurple;
+}
+.buttonPlace{
+    text-align: center;
+}
+button{
+    margin: auto;
+    
+}
+p[id*='valid'] {
+    color: darkgoldenrod;
+}
+#result {
+    background-color: dimgray;
+    padding-left: 5px;
+    border: 6px ridge darkgoldenrod;
+    text-align:center;
+    color: darkgoldenrod;
+    text-shadow: -1px -1px 0 rebeccapurple, 1px -1px 0 rebeccapurple, -1px 1px 0 rebeccapurple, 1px 1px 0 rebeccapurple;
+}
+
+#gradeResult {
+    background-color: dimgray;
+    margin-top: 10px;
+    padding-left: 5px;
+    border: 6px outset darkgoldenrod;
+    text-align: center;
+    color: darkgoldenrod;
+    text-shadow: -1px -1px 0 rebeccapurple, 1px -1px 0 rebeccapurple, -1px 1px 0 rebeccapurple, 1px 1px 0 rebeccapurple;
+}

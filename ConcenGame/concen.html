@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <script src="concentration.js"></script>
+    <link rel="stylesheet" href="styles_concen.css">
+</head>
+<body>
+    <form>
+        <label for="three">3 Pair</label>
+        <input type="radio" name="numberOfPairs" value="three" />
+        <label for="four">4 Pair</label>
+        <input type="radio" name="numberOfPairs" value="four" />
+        <label for="five">5 Pair</label>
+        <input type="radio" name="numberOfPairs" value="five"/>
+        <label for="six">6 Pair</label>
+        <input type="radio" name="numberOfPairs" value="six"/>
+        <label for="seven">7 Pair</label>
+        <input type="radio" name="numberOfPairs" value="seven"/>
+        <label for="eight">8 Pair</label>
+        <input type="radio" name="numberOfPairs" value="eight"/>
+    </form>
+    <input type="button" id="play" value="Play"/>
+    <input type="button" id="quit" value="Quit" disabled/>
+    <table>
+        <tr>
+            <td>
+                <input type="button" id="br_1_1" onclick="flipper('br_1_1')" class="unflipped" />
+                <input type="button" id="br_1_2" onclick="flipper('br_1_2')" class="unflipped" />
+                <input type="button" id="br_1_3" onclick="flipper('br_1_3')" class="unflipped" />
+                <input type="button" id="br_1_4" onclick="flipper('br_1_4')" class="unflipped" />
+                <input type="button" id="br_1_5" onclick="flipper('br_1_5')" class="unflipped" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="br_2_1" onclick="flipper('br_2_1')" class="unflipped" />
+                <input type="button" id="br_2_2" onclick="flipper('br_2_2')" class="unflipped" />
+                <input type="button" id="br_2_3" onclick="flipper('br_2_3')" class="unflipped" />
+                <input type="button" id="br_2_4" onclick="flipper('br_2_4')" class="unflipped" />
+                <input type="button" id="br_2_5" onclick="flipper('br_2_5')" class="unflipped" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="br_3_1" onclick="flipper('br_3_1')" class="unflipped" />
+                <input type="button" id="br_3_2" onclick="flipper('br_3_2')" class="unflipped" />
+                <input type="button" id="br_3_3" onclick="flipper('br_3_3')" class="unflipped" />
+                <input type="button" id="br_3_4" onclick="flipper('br_3_4')" class="unflipped" />
+                <input type="button" id="br_3_5" onclick="flipper('br_3_5')" class="unflipped" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="br_4_1" onclick="flipper('br_4_1')" class="unflipped" />
+                <input type="button" id="br_4_2" onclick="flipper('br_4_2')" class="unflipped" />
+                <input type="button" id="br_4_3" onclick="flipper('br_4_3')" class="unflipped" />
+                <input type="button" id="br_4_4" onclick="flipper('br_4_4')" class="unflipped" />
+                <input type="button" id="br_4_5" onclick="flipper('br_4_5')" class="unflipped" />
+            </td>
+        </tr>
+    </table>
+    <div id="winner">
+        <p id="winText">&nbsp</p>
+        <input type="button" id="playAgain" value="Play Again?" disabled />
+    </div>
+</body>

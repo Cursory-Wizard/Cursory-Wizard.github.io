@@ -1,0 +1,152 @@
+﻿/* 
+	 Author:   Michael Phelan
+	 Date:     10/10/2017
+	 Filename: styles.css
+*/
+
+/* reset styles */
+html {
+   font-size: 16px;
+}
+* {
+   padding: 0;
+   margin: 0;
+}
+
+
+/* document-wide styles */
+body {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+ 
+   
+}
+
+
+/* header section */
+
+h1 {
+   text-align: left;
+   font-family: Impact;
+   font-weight: normal;
+   color: #a86828;
+   max-height: 200px;
+   background: radial-gradient(circle at 80% 20%, #ede97e 5%, #a82828 10%, black 85%);
+   font-size: 3em;
+   
+}
+
+/* site navigation bar */
+
+nav.sitenavigation {
+   color: #a86828;
+   text-align: center;
+   min-height: 75px;
+   background-color: black;
+   
+}
+nav.sitenavigation li {
+   margin: 1em 2em;
+   display: inline-block;
+   font-family: Impact;
+   font-size: 1.1em;
+   line-height: 1em;
+   
+}
+nav.sitenavigation a:link {
+   text-decoration: none;
+   color: #a86828;
+   background-color: black;
+   box-shadow: 0px 10px 5px black;
+   transition: box-shadow 2s, color 2s;
+}
+nav.sitenavigation a:visited {
+   color: #a82828;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: #28a828;
+   box-shadow: 0px 10px 5px #3eff3e;
+}
+
+/* main content */
+article {
+   margin: 0 auto;
+   padding: 2em;
+   
+   font-color: #ff9f3e;
+   background: url("images/blurred.jpg");
+}
+.container {
+   min-width: 600px;
+   max-width: 1000px;
+   border: 10px #a86828;
+   float: none;
+   clear: none;
+   
+}
+
+h2 {
+   color: #3eff3e;
+}
+
+p {
+	color: #ff9f3e;
+}
+p.warnings {
+	color: #ff9f3e;
+	font-style: italic;
+	font-weight: bold;
+}
+ol li {
+	color: #ff9f3e;
+	list-style-position: inside;
+	list-style-type: upper-roman;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+table, th, td {
+	color: #a82828;
+	border: 2px solid #a82828;
+	margin-left: 20px;
+}
+ul li {
+	color: #ff9f3e;
+	list-style-position: inside;
+	list-style-type: square;
+	padding-left: 20px;
+}
+form {
+	color: #a82828;
+	font-weight: 600;
+	margin-left: 40px;
+	
+}
+label {
+	display: inline-block;
+	/*float: left;*/
+	/*clear: left;*/
+	width: 200px;
+	text-align: right;
+	padding-right: 5px;
+}
+input, textarea {
+	display: inline-block;
+	/*float: left;*/
+}
+#leftbutton {
+	margin-left: 25%;
+	margin-right: 20px;
+}
+
+.btn:hover {
+	background-color:#3eff3e;
+}
+
+/* footer section */
+footer {
+   padding: 1em;
+   background-color: black;
+   box-shadow: inset 100px 0px 100px -50px #a82828, 
+               inset -100px 0px 100px -50px #a82828;   
+   text-align: center;
+}

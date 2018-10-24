@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Make your way into space today!</title>
+      <!-- 
+        
+         Author:   Michael Phelan
+         Date:     10/10/2017
+         Filename: assign2.html
+      -->
+      <meta charset="utf-8">
+      
+      <link rel="stylesheet" href="styles.css">
+      
+   </head>
+   <body>
+	<script>
+		function submitForm() {
+		document.getElementById("customerForm").submit();
+		}
+		function clearForm() {
+		document.getElementById("customerForm").reset();
+		}
+	</script>
+      <header>
+         <h1><a href="assign2.html"><img src="images/Xentras.png" width="600" height="200" alt="XenTRAS Logo"></a></h1>
+      </header>
+      <nav class="sitenavigation">
+         <ul>
+            <li><a href="assign2.html">Home</a></li>
+            <li><a href="#payload">Payload Sizes</a></li>
+            <li><a href="#launchschedule">Launch Schedules</a></li>
+			<li><a href="#restrictions">Restrictions</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+         </ul>
+      </nav>
+      <article id="contentstart">
+         <div class="container" id="introduction">
+			<p> Welcome to XenTRAS Launch Services, your premier source for orbital, intra-lunar, and intra-solar<br>
+			payload deliveries. Our team of highly-trained and/or well-programmed staff and androids are here to ensure<br>
+			your next launch is on time, on-budget, and on-mission!</p>
+			<br>
+			<p> Inserting your product into the correct orbital inclination is our specialty. Our process of checks,<br>
+			safety measures, and fallbacks work to reduce the incidence of common Rocket Underperformance Hiccups and Rapid Orbital<br>
+			Hazards &#40;known collectively in the industry as a 'RUH-ROH'&#41;.</p>
+			<br>
+		</div>
+		<div class="container" id="payload">
+			<h2>Payload Sizes</h2>
+			<br>
+			<p> We offer several options for getting lifting your object to orbit, depending upon size and mass:</p>
+			<br>
+			<ol>
+				<li>The Bullet - Perfect for human-sized transport</li>
+				<li>The Shipyard - For cargo up to 30 meters and 11 tons</li>
+				<li>God's Hand - For oddly-shaped, delicate, and structures up to 100 tons</li>
+			</ol>
+			<br>
+		</div>
+		<div class="container" id="launchschedule">
+			<h2>Launch Schedules</h2>
+			<br>
+			<p class="warnings">Please be aware that our launch schedules may be modified<br>
+			due to incliment weather, solar activity, or nuclear war.</p>
+			<br>
+			<table>
+				<tr>
+					<th></th>
+					<th>Monday</th>
+					<th>Wednesday</th>
+					<th>Friday</th>
+				</tr>
+				<tr>
+					<td>Morning</td>
+					<td>Bullet</td>
+					<td>Bullet</td>
+					<td>Bullet</td>
+				</tr>
+				<tr>
+					<td>Evening</td>
+					<td>Bullet</td>
+					<td>Shipyard</td>
+					<td>God's Hand</td>
+				</tr>
+			</table>
+			<br>
+		</div>
+		<div class="container" id="restrictions">
+			<h2>Restrictions</h2>
+			<br>
+			<p>Due to Intergalactic Treaty we are prohibited from lifting certain cargos to any orbit.</p>
+			<br>
+			<p>The following list should not be considered exhaustive, final decisions will be made at the time of order.</p>
+			<br>
+			<ul>
+				<li>Nuclear or Antimatter weapons</li>
+				<li>Lasers in excess of 100MW</li>
+				<li>Doomsday structures</li>
+				<li>Super-Soldiers, even if in stasis.</li>
+			</ul>
+			<br>
+		</div>
+		<div class="container" id="contactus">
+            <h2>Contact Us</h2>
+			<br>
+			<p>Enter your information below and one of our Orbital Specialists will be happy to contact you!</p>
+			<br>
+			<form action="https://imsurethiswebsitedoesnotexistmaybepossibly.com" method="POST" id="customerForm">
+				<label for="cname">Your name:</label>
+				<input type="text" id="cname" name="cname" placeholder="Firstname Lastname"><br><br>
+				<label for="street">Street Address:</label>
+				<input type="text" id="street" name="street" placeholder="123 ABC Way"><br>
+				<label for="city">City:</label>
+				<input type="text" id="city" name="city" placeholder="Hometown"><br>
+				<label for="cstate">State:</label>
+				<input type="text" id="cstate" name="cstate" placeholder="Homestate"><br>
+				<label for="czip">Zip code:</label>
+				<input type="text" id="czip" name="czip" placeholder="12345"><br><br>
+				<label for="launchsystem">What launch system interests you?</label>
+				<input type="radio" id="launchsystem" name="launchsystem" value="bullet" >The Bullet
+				<input type="radio" id="launchsystem2" name="launchsystem" value="shipyard" >The Shipyard
+				<input type="radio" id="launchsystem3" name="launchsystem" value="godshand" >God's Hand
+				<input type="radio" id="launchsystem4" name="launchsystem" value="alltypes" >All types<br><br>
+				<label for="orbitform">A brief description of what you wish to launch:</label>
+				<textarea id="orbitform" name="orbitform"  rows="6" cols="50"></textarea><br><br>
+				<label for="insurance">Do you have a replacement cargo</label>
+				<input type="checkbox" id="insurance" name="replacement" value="secondary">I have a duplicate.<br>
+				<label for="insurance">in case of catastrophic loss?</label>
+				<input type="checkbox" id="insurance2" name="replacement2" value="insured">I have insurance.<br>
+				<br>
+				<input type="button" onclick="clearForm()" value="Clear form" id="leftbutton" class="btn">
+				<input type="button" onclick="submitForm()" value="Submit form" class="btn">
+			</form>
+			<br>
+         </div>
+		 <div class="container" id="filler">
+			<p>We look forward to meeting your needs!</p>
+		 </div>
+     </article>
+	
+	<footer>
+         <p>Michael Phelan</p>
+		 <p>Mphelan264</p>
+		 <p id="dateoutput"></p>
+	  <script>
+	  var d = new Date();
+		document.getElementById("dateoutput").innerHTML = d;
+	  </script>
+     </footer>
+   </body>
+</html>

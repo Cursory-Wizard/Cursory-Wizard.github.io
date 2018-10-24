@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test Scores</title>
+    <link href="css/default.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div>
+        <h1 id="title">Test Scores</h1>
+        <br />
+        <form id="formOne">
+            <label for="scoreOne">Test Score 1:</label>
+            <input type="text" id="scoreOne"/><br />
+            <p id="validOne"></p>
+            <label for="scoreTwo">Test Score 2:</label>
+            <input type="text" id="scoreTwo" /><br />
+            <p id="validTwo"> </p>
+            <label for="scoreThree">Test Score 3:</label>
+            <input type="text" id="scoreThree" /><br />
+            <p id="validThree"></p>            
+        </form>
+    </div>
+    <br />
+    <div id="buttonPlace">
+        <button onclick="calcAve()">Calculate</button>
+    </div>
+    <br />
+    <div id="result">
+        <h4 id="sumResult">Score sum</h4>
+        <br />
+        <h4 id="averageResult">Average score</h4>
+    </div>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

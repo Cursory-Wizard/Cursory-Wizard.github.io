@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>Odds and Evens Game</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Let's Play ODDS AND EVENS!</h1>
+        <fieldset>
+            <legend>Rules</legend>
+            <ul>
+                <li>The computer is even, you are odd (no offense).</li>
+                <li>Each round, you and the computer "hold up" 1 to 5 fingers.</li>
+                <li>The total number of fingers are tallied.</li>
+                <li>Even totals go to the computer.</li>
+                <li>Odd totals go to you.</li>
+                <li>First to 50 wins.</li>
+            </ul>
+        </fieldset>
+
+        <input type="button" id="play" value="Play">
+        <input type="text" id="playerPick" value="" />
+        <span id="message">Enter a number and hit play</span>
+        <input type="button" id="quit" value="Quit" /><br>
+        <fieldset>
+            <legend>This round</legend>
+            <label for="player">You:</label>
+            <input type="text" id="player" value="0" disabled>
+            <label for="computer">Computer:</label>
+            <input type="text" id="computer" value="0" disabled>
+        </fieldset>
+        <fieldset>
+            <legend>Totals</legend>
+            <label for="odd">You:</label>
+            <input type="text" id="odd" value="0" disabled>
+            <label for="even">Computer:</label>
+            <input type="text" id="even" value="0" disabled>
+        </fieldset>
+    </main>
+</body>
+</html>
